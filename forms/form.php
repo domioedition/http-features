@@ -1,9 +1,14 @@
+<pre>
 <?php
-var_dump($_REQUEST);
-var_dump($_POST);
-var_dump($_GET);
+echo "\nGET: ";
+print_r($_GET); //?name=Mike&age=25&english=B2
+echo "\nPOST: ";
+print_r($_POST);
+echo "\nREQUEST: ";
+print_r($_REQUEST);
+// die();
 ?>
-
+</pre>
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,8 +26,9 @@ var_dump($_GET);
     <div class="row">
         <div class="col-md-8">
 
-<!--            <form enctype="application/x-www-form-urlencoded" action="action.php" method="post">-->
-            <form action="action.php" method="post">
+           <!-- <form enctype="application/x-www-form-urlencoded" action="action.php" method="post"> -->
+            <!-- <form action="action.php" method="post"> -->
+            <form action="action.php" method="get">
 <!--                <input type="hidden" name="_method" value="put">-->
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>

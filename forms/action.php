@@ -1,16 +1,25 @@
+<pre>
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-    echo "post method";
+    echo "\nPOST method\n\n";
     print_r($_POST);
 } else {
-    echo "GET method";
+    echo "\nGET method\n";
+    print_r($_GET);
 }
+echo "\nREQUEST\n";
+print_r($_REQUEST);
 
-$record  = date('Y-m-d H:i:s') . " - " .  $_REQUEST['email'] . "\n";
+$record  = date('Y-m-d H:i:s') . " - " .  implode(' - ',  $_REQUEST) . "\n";
 file_put_contents('test.log', $record, FILE_APPEND);
-header('Location: http://127.0.0.1/forms/');
-exit();
+
+// 1 - option redirect
+// header('Location: http://127.0.0.1/forms/');
+
+// 2 - option redirect
+// header( "Refresh:5; url=http://127.0.0.1/forms/", true, 303);
+// exit();
 
 
 //How we can use PUT/PATCH/DELETE?

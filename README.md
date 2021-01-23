@@ -1,26 +1,33 @@
-# Some examples HTTP and useful links
+# Statistic
+https://w3techs.com/technologies/details/ce-http2
+https://w3techs.com/technologies/details/ce-http3
 
-Browser developer tools
-//document.cookie
+# Developer tools in browser
 
-Show curl(http request, response).
+Network
+Console
+    document.cookie
+Application
+
+# curl(http request, response)
 https://curl.haxx.se/docs/manpage.html
 --http2
 
 curl -vi http://example.com
 
 curl is a tool to transfer data from or to a server, using one of the supported protocols (DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET and TFTP). The command is designed to work without user interaction.
-Иногда используется для авторизации с помощью кукис и метода POST.
+https://geekflare.com/curl-command-usage-with-example/
 
-Postman на примере https://jsonplaceholder.typicode.com
+# Postman
+https://jsonplaceholder.typicode.com
 
-Show real examples
-1) Forms
-2) GET, POST - Идемпоте́нтный запрос
-3) COOKIE, SESSION (как это выглядит в бровзере, как выглядит файл).
-4) REQUEST
-5) SERVER
-6) FILES
+# Show real examples
+1) GET, POST, idempotent request
+2) Forms, postman post example - http://127.0.0.1/forms/action.php?email=some_email@mail.com
+3) FILES
+4) COOKIE, SESSION (show in browser, file example).
+5) REQUEST
+6) SERVER
 7) JSON
 8) auth
 
