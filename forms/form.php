@@ -4,8 +4,8 @@ echo "\nGET: ";
 print_r($_GET); //?name=Mike&age=25&english=B2
 echo "\nPOST: ";
 print_r($_POST);
-echo "\nREQUEST: ";
-print_r($_REQUEST);
+//echo "\nREQUEST: ";
+//print_r($_REQUEST);
 // die();
 ?>
 </pre>
@@ -28,7 +28,8 @@ print_r($_REQUEST);
 
            <!-- <form enctype="application/x-www-form-urlencoded" action="action.php" method="post"> -->
             <!-- <form action="action.php" method="post"> -->
-            <form action="action.php" method="get">
+            <form action="action.php" method="post">
+<!--                <input type="hidden" name="_method" value="put">-->
 <!--                <input type="hidden" name="_method" value="put">-->
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>

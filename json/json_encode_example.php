@@ -30,11 +30,10 @@ $array = ["foo" =>[
 
 //print_r($array);
 
-$options = JSON_PRETTY_PRINT;
-
-//echo json_encode($array, $options, 3);
+$options = JSON_PRETTY_PRINT | JSON_FORCE_OBJECT | JSON_HEX_TAG;
+//echo json_encode($array, $options, 5);
 
 $result = json_encode($array, $options, 3);
-$err = json_last_error();
 var_dump($result);
-var_dump($err);
+echo  "\n". (json_last_error_msg());
+echo  "\n". (json_last_error());

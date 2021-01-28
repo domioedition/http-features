@@ -1,16 +1,23 @@
 # Statistic
 https://w3techs.com/technologies/details/ce-http2
+
 https://w3techs.com/technologies/details/ce-http3
 
 # Developer tools in browser
 
 Network
+
 Console
-    document.cookie
+
+document.cookie
+
+C:\Users\user_name\AppData\Local\Google\Chrome\User Data\Default
+
 Application
 
 # curl(http request, response)
 https://curl.haxx.se/docs/manpage.html
+
 --http2
 
 curl -vi http://example.com
