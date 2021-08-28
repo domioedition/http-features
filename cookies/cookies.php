@@ -1,13 +1,17 @@
+<pre>
 <?php
 /**
  * Cookie Example
  */
+echo "<h1>COOKIES</h1>";
+
 
 //Error
-//setcookie("name", "Sam");
-//var_dump($_COOKIE);
+setcookie("name", "Sam");
+// var_dump($_COOKIE);
 // echo $_COOKIE['name'];
-
+print_r($_COOKIE);
+die;
 //setting cookie(while the browser is opened)
 // setcookie("name_new", "Sammy");
 
@@ -29,28 +33,32 @@
 // setcookie("name", "Sam", time()+3600, '/', '.example.com', false, true);
 
 //unset cookie
-// setcookie('name', '', time()-3600);
+ setcookie('name', '', time()-3600);
 
 
-// //store array in cookies
- $user = [
-     'name' => 'Sam',
-     'theme' => 'original',
- ];
+
+//как сохранить массив в cookies?
+//store array in cookies
+  $user = [
+      'name' => 'Sam',
+      'theme' => 'original',
+  ];
 
 // //serialize()
- setcookie('user', json_encode($user));
-
-
- print_r($_COOKIE);
+// setcookie('user', json_encode($user));
+// print_r($_COOKIE);
 
 
 //serialize() vs json_encode()
 
 //масив упаковать в строку для передачи куда-нибудь
 //для сохранения целостности
-//$str = base64_encode(serialize($user)); //YToyOntzOjQ6Im5hbWUiO3M6MzoiU2FtIjtzOjU6InRoZW1lIjtzOjY6Im9yaWdpbiI7fQ==
-//echo $str;
-//
-//$u = unserialize(base64_decode($str));
-//print_r($u);
+ $str = base64_encode(serialize($user)); //YToyOntzOjQ6Im5hbWUiO3M6MzoiU2FtIjtzOjU6InRoZW1lIjtzOjY6Im9yaWdpbiI7fQ==
+ echo $str;
+ setcookie('user_serialized', $str);
+// //
+// $u = unserialize(base64_decode($str));
+// print_r($u);
+
+
+ print_r($_COOKIE);

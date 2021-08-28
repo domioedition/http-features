@@ -1,9 +1,9 @@
 <pre>
 <?php
-echo "\nGET: ";
-print_r($_GET); //?name=Mike&age=25&english=B2
-echo "\nPOST: ";
-print_r($_POST);
+//echo "\nGET: ";
+// print_r($_GET); //?name=Mike&age=25&english=B2
+// echo "\nPOST: ";
+// print_r($_POST);
 //echo "\nREQUEST: ";
 //print_r($_REQUEST);
 // die();
@@ -27,10 +27,10 @@ print_r($_POST);
         <div class="col-md-8">
 
            <!-- <form enctype="application/x-www-form-urlencoded" action="action.php" method="post"> -->
-            <!-- <form action="action.php" method="post"> -->
             <form action="action.php" method="post">
+<!--             <form action="action.php">-->
 <!--                <input type="hidden" name="_method" value="put">-->
-<!--                <input type="hidden" name="_method" value="put">-->
+<!--                <input type="hidden" name="_method" value="delete">-->
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">

@@ -1,4 +1,4 @@
-<?php
+<pre><?php
 // A valid json string
 $json[] = '{"Organization": "PHP Documentation Team"}';
 
@@ -42,7 +42,7 @@ foreach ($json as $string) {
 
 // An invalid UTF8 sequence
 $text = "\xB1\x31";
-//$text = "my new test";
+ $text = "my new test";
 
 $json  = json_encode($text);
 $error = json_last_error();

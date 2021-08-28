@@ -1,22 +1,33 @@
+<pre>
 <?php
-setcookie("nane1", "some value", time() + 3600);
 
-var_dump($_COOKIE);
-var_dump($_REQUEST);
-
-//http://127.0.0.1/superglobals_example.php?name=Mike
-//print_r($_GET);
-
-//print_r($_REQUEST);
+//superglobals_example.php?name=Mike&age=25
+ echo "<h1>SERVER</h1>";
+ print_r($_SERVER);
 
 
-// print_r($_SERVER);
-#/c/xampp/php
-//print_r( $_ENV);
+// echo "<h1>REQUEST</h1>";
+// print_r($_REQUEST);
+//
+// echo "<h1>GET</h1>";
+// print_r($_GET);
+//
+// echo "<h1>POST</h1>";
+// print_r($_POST);
+
+// setcookie("name_cookie", "some value", time() + 3600);
+// var_dump($_COOKIE);
 
 
+/*
+    adding new variable to env
+    VAR="aaa"
+    printenv VAR
+*/
+//print_r($_ENV);
 //Explanation variables_order https://www.php.net/manual/en/ini.core.php#ini.variables-order
 // variables_order="GPCSE"
-//var_dump(getenv());
 
-// print_r($_REQUEST);
+//https://www.tutorialspoint.com/php-env
+putenv("PHP_TEMPUSER=GUEST"); //set new env variable
+print_r(getenv());

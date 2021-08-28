@@ -16,17 +16,37 @@ C:\Users\user_name\AppData\Local\Google\Chrome\User Data\Default
 Application
 
 # curl(http request, response)
+
+
+curl -vi http://ua.fm
+
+curl -vi https://example.com
+
 https://curl.haxx.se/docs/manpage.html
 
 --http2
 
 curl -vi http://example.com
 
+    -v, --verbose
+    Makes curl verbose during the operation.
+    
+    -i, --include
+    Include the HTTP response headers in the output. The HTTP
+    response headers can include things like server name,
+    cookies, date of the document, HTTP version and more...
+
+    POST example ?
+
+
 curl is a tool to transfer data from or to a server, using one of the supported protocols (DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET and TFTP). The command is designed to work without user interaction.
 https://geekflare.com/curl-command-usage-with-example/
 
 # Postman
 https://jsonplaceholder.typicode.com
+https://jsonplaceholder.typicode.com/todos/
+
+https://stackoverflow.com/questions/25857508/what-is-the-http-method-purge
 
 # Show real examples
 1) GET, POST, idempotent request
@@ -38,11 +58,13 @@ https://jsonplaceholder.typicode.com
 7) JSON
 8) auth
 
-Http request from PHP - Guzzle
+# Http request from PHP - Guzzle
+https://docs.guzzlephp.org/en/stable/
 
-Http request from JS - Axios
+# Http request from JS - Axios
+https://github.com/axios/axios
 
-Chart.js
+# Chart.js
 
 
 

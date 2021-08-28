@@ -45,7 +45,6 @@ $msg .= " in this session.";
             <pre>
             <?php
             print_r($_SESSION);
-            //        var_dump(SID);
             ?>
             </pre>
 

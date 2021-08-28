@@ -1,5 +1,5 @@
 AuthType Basic
 AuthName "Access to the staging site"
-AuthUserFile C:/xampp/apache/.htpasswd
-#AuthUserFile /etc/apache2/.htpasswd
+#AuthUserFile C:/xampp/apache/.htpasswd
+AuthUserFile /etc/apache2/.htpasswd
 Require valid-user

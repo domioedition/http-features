@@ -1,11 +1,10 @@
+<pre>
 <?php
-
-//print_r($_SESSION);
-
-
+session_start();
+var_dump($_SESSION); // NULL
 
 // Start the session
-session_start();
+
 
 // Set session variables
 $_SESSION["favcolor"] = "green";

@@ -1,3 +1,4 @@
+<pre>
 <?php
 session_start();
 $_SESSION['userName'] = 'john wick';
@@ -7,3 +8,6 @@ $session_data = session_encode(); // Get the session data
 $filehandle = fopen('php_session.txt', 'w+');// open a file write session data
 fwrite($filehandle,$session_data);// write the session data to file
 fclose($filehandle);
+
+echo "<h1>Session</h1>";
+print_r($session_data);
