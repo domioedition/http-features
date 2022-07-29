@@ -70,6 +70,13 @@ https://github.com/axios/axios
 
 # useful links:
 
+## http2 demo
+http://www.http2demo.io/
+
+## How Web Works
+https://github.com/vasanthk/how-web-works
+
+
 https://w3techs.com/technologies/details/ce-http2
 
 https://www.restapitutorial.com/httpstatuscodes.html
