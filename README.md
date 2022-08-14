@@ -102,7 +102,8 @@ https://www.sitepoint.com/use-jsonserializable-interface/
 https://symfony.com/doc/4.1/form/action_method.html
 
 https://medium.com/bbc-design-engineering/http-2-is-easy-just-turn-it-on-34baad2d1fb1
-========================================================================================================
+
+https://www.codetinkerer.com/2015/12/04/choosing-an-http-status-code.html
 
 Describe the structure of your APIs so that machines can read them
 Where we can store information about what urls, methods, codes, etc.
