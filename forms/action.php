@@ -10,15 +10,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 }
 
 
-// echo "\nREQUEST\n";
-// print_r($_REQUEST);
-
-//print_r($_COOKIE);
-
-
+echo "\nREQUEST\n";
+print_r($_REQUEST);
 
 //Show example in Chrome and Firefox
-
 $record  = date('Y-m-d H:i:s') . " - " .  implode(' - ',  $_REQUEST) . "\n";
 file_put_contents('test.log', $record, FILE_APPEND);
 
@@ -26,8 +21,8 @@ file_put_contents('test.log', $record, FILE_APPEND);
 // header('Location: http://127.0.0.1/http-features/forms/');
 
 // 2 - option redirect
-  header( "Refresh:3; url=http://127.0.0.1/", true, 303);
-  exit();
+// header( "Refresh:3; url=http://127.0.0.1/", true, 303);
+// exit();
 
 
 //How we can use PUT/PATCH/DELETE?

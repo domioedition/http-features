@@ -1,11 +1,11 @@
 <pre>
+<a href="http://localhost/http-features/sessions/">Sessions</a>
 <?php
 session_start();
-var_dump($_SESSION); // NULL
+echo "<h1>SESSION</h1>";
+print_r($_SESSION); // NULL
 
-// Start the session
-
-
+echo "<h2>Set variables</h2>";
 // Set session variables
 $_SESSION["favcolor"] = "green";
 $_SESSION["favanimal"] = "cat";
