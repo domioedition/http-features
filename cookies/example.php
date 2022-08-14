@@ -14,7 +14,7 @@ if (isset($_COOKIE['visitCounter'])) {
 setcookie('visitCounter', $visitCounter, 0x7FFFFFFF); //unsigned 32-bit integer
 setcookie('lastVisit', time(), 0x7FFFFFFF);
 
-
+// How to set cookies one time per day?
 //как изменить скрипт так, чтобы куки устанавливались только один раз в день??
 ?>
 

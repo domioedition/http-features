@@ -1,5 +1,8 @@
 <?php
 
+var_dump($_FILES);
+die;
+
 $uploadfile = basename($_FILES['userfile']['name']);
 
 

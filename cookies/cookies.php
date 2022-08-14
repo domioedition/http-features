@@ -4,10 +4,8 @@
  * Cookie Example
  */
 echo "<h1>COOKIES</h1>";
-
-
 //Error
-setcookie("name", "Sam");
+setcookie("user_name", "Mike", time()+3600, __DIR__, "localhost", true, true);
 // var_dump($_COOKIE);
 // echo $_COOKIE['name'];
 print_r($_COOKIE);

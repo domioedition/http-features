@@ -1,17 +1,20 @@
 <pre>
 <?php
 
+print_r($GLOBALS);
+
+
 //superglobals_example.php?name=Mike&age=25
- echo "<h1>SERVER</h1>";
- print_r($_SERVER);
+echo "<h1>SERVER</h1>";
+print_r($_SERVER);
 
 
 // echo "<h1>REQUEST</h1>";
 // print_r($_REQUEST);
-//
+
 // echo "<h1>GET</h1>";
 // print_r($_GET);
-//
+
 // echo "<h1>POST</h1>";
 // print_r($_POST);
 
@@ -20,6 +23,10 @@
 
 
 /*
+    export KEY=value
+    export MY_ACCOUNT_SID=youraccountsid
+    echo $MY_ACCOUNT_SID
+
     adding new variable to env
     VAR="aaa"
     printenv VAR
