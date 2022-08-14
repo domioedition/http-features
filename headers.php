@@ -49,8 +49,8 @@ echo 'اختبار الشخصية: اعرف شخصيتك هل أنت إنسان 
 // header("Cache-Control: max-age=3600");
 
 # Enable caching 1 hour
-header("Expires: " . date("r", time() + 3600));
-echo date('H:i:s');
+// header("Expires: " . date("r", time() + 3600));
+// echo date('H:i:s');
 
 # store this file for one year, but before use it, check to see if a new version is available.
 // header('Cache-Control: no-cache, max-age=31536000');

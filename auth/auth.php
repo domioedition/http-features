@@ -8,4 +8,12 @@
 
 <?php
 #sudo htpasswd -c /etc/apache2/.htpasswd USERNAME
+
+
+#cd /mnt/c/xampp/apache
+# htpasswd -c .htpasswd USERNAME
+
+# CLEAR cache
+# chrome://restart
+
 echo "File: " . __FILE__;
